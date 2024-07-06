@@ -1,0 +1,455 @@
+/* Importando la tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-width: 430px;
+}
+
+header {
+    background: #ffffff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    padding-left: 3%;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 4px 0;
+    transition: all 0.3s;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-links-mobile {
+    display: flex;
+    list-style: none;
+    
+}
+.nav-links-mobile li {
+    margin-left: 20px;
+}
+
+.nav-links-mobile a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+/* Main Content */
+
+#main-section {
+    position: relative;
+    height: 300px;
+    height: 573px;
+    background: linear-gradient(to bottom, white, #63BFF2);
+    text-align: center;
+    color: white;
+   
+}
+
+#img-mobile {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 430px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 60%;
+}
+
+.info{
+    padding-top: 250px;
+    position: absolute;
+}
+
+.info h2{
+    font-style: italic;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.info h3{
+    font-weight: lighter;
+    font-size: 1.1em;
+}
+
+.btn-date{
+    position: absolute;
+    background-color: #FCF0C8;
+    color: black;
+    border-radius: 40px;
+    width: 40%;
+    font-size: 0.8em;
+    margin-left: 30%;
+    margin-top: 470px;
+}
+
+#about-us{
+   text-align: center;
+   color: #95CFE7;
+   
+}
+
+#about-us h2{
+    font-size: 1.7em;
+}
+
+.container{
+    margin-top: 10%;
+    display: flex;
+}
+
+.container-2{
+    margin-top: -1%;
+    display: flex;
+}
+.item{
+    width: 50%;
+}
+
+.item p{
+    font-size: 0.8em;
+    width: 90%;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.item img{
+    width: 100%;
+}
+
+#promo-section {
+    margin-top: -1%;
+    position: relative;
+    height: 300px;
+    height: 573px;
+    background: linear-gradient(to top, white, #63BFF2);
+    text-align: center;
+    color: white;
+}
+
+#img-mobile-promo {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 430px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 50%;
+    
+}
+
+.promo-img{
+    margin-top: 10%;
+}
+
+
+
+.info-promo{
+    padding-top: 50px;
+    position: absolute;
+}
+
+.info-promo h2{
+    font-style: italic;
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.info-promo h3{
+    font-weight: lighter;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+#benefits-section img{
+    height: 573px;
+}
+
+.container-img{
+    display: flex;
+}
+
+.wavy-right{
+    margin-left: -76%;
+}
+
+.benefits{
+    position: relative;
+    margin-top: -130%;
+    margin-left: 50%;
+    color: white;
+    font-style: italic;
+    
+}
+
+.benefits h2{
+    margin-left: 6%;
+    font-size: 1.8em;
+}
+
+.benefits h3{
+    margin-left: 45%;
+    margin-top: 30%;
+    font-size: 1.8em;
+}
+
+.benefits li{
+    padding: 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#li-1{
+    margin-left: -5%;
+}
+
+#li-2{
+    margin-left: 0%;
+}
+
+#li-3{
+    margin-left: 5%;
+}
+
+#li-4{
+    margin-left: 10%;
+}
+
+.wavy-left{
+    margin-top: 41px;
+    position: absolute;
+}
+
+.client-1{
+    margin-top: 41px;
+    margin-left: 11.5%;
+    
+}
+
+.review1-section img{
+    height: 573px;
+}
+
+
+.review-1{
+    position: relative;
+    margin-top: -130%;
+    color: white;
+    font-style: italic;
+}
+
+.review-1 h2{
+    margin-left: 5%;
+}
+
+.review-1 h3{
+    font-size: 1.6em;
+    text-align: center;
+    margin-left: -40%;
+    margin-top: 20%;
+}
+
+.review2-section{
+    margin-top: 63.5%;
+}
+
+.review2-section img{
+    height: 573px;
+}
+
+
+.review-2 h3{
+    font-size: 1.6em;
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 20%;
+}
+
+.review-2{
+    position: relative;
+    margin-top: -130%;
+    color: white;
+    font-style: italic;
+}
+
+.review1-section img{
+    height: 573px;
+}
+
+
+.review3-section{
+    margin-top: 58%;
+}
+
+
+.review3-section img{
+    
+    height: 500px;
+}
+
+
+.review-3{
+    position: relative;
+    margin-top: -130%;
+    color: white;
+    font-style: italic;
+}
+
+
+
+.review-3 h3{
+    font-size: 1.6em;
+    text-align: center;
+    margin-left: -50%;
+    margin-top: 30%;
+}
+
+.client-3{
+    margin-top: 41px;
+    margin-left: 23%;
+    
+}
+
+#contact-section {
+    position: relative;
+    height: 300px;
+    height: 573px;
+    text-align: center;
+    color: white;
+}
+
+#img-mobile-contact {
+    margin-top: 52.2%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 432px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 60%;
+}
+
+.info-contact{
+    padding-top: 250px;
+    position: absolute;
+}
+
+.info-contact h2{
+    font-style: italic;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.info-contact h3{
+    font-style: italic;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.form{
+    padding-top: 105%;
+    position: absolute;
+}
+.form span{
+    font-size: 0.8em;
+}
+
+.form input{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+}
+
+
+.form textarea{
+    max-width: 90%;
+    min-width: 90%;
+    height: 150px !important;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+}
+
+.form textarea::placeholder{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.btn{
+    
+    background-color: #FCF0C8;
+    color: black;
+    border-radius: 20px;
+    width: 20%;
+    font-size: 0.8em;
+    
+}
+
+footer {
+    background: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    margin-top: 70%;
+}
+
+
+@media (min-width: 768px) {
+.nav-links-mobile{
+    display: none;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+}
