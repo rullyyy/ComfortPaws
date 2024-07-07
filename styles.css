@@ -488,7 +488,7 @@ footer {
 }
 
 
-@media (min-width: 430px) {
+@media (min-width: 431px) {
 .nav-links-mobile{
     display: none;
 }
