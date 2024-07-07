@@ -1,13 +1,11 @@
-/* Importando la tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     min-width: 430px;
+    
 }
 
 header {
@@ -45,9 +43,7 @@ nav {
     transition: all 0.3s;
 }
 
-.nav-links {
-    display: none;
-}
+
 
 .nav-links-mobile {
     display: flex;
@@ -64,7 +60,9 @@ nav {
     font-weight: bold;
 }
 
-
+a:visited{
+    color: #3BB5FA;
+}
 
 
 /* Main Content */
@@ -84,10 +82,14 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 430px;
+    width: 100%;
     object-fit: cover;
     mix-blend-mode: multiply;
     opacity: 60%;
+}
+
+#img-pc{
+    display: none;
 }
 
 .info{
@@ -96,8 +98,9 @@ nav {
 }
 
 .info h2{
+    margin-left: 1%;
     font-style: italic;
-    font-size: 2.3em;
+    font-size: 2.1em;
     font-weight: bold;
 }
 
@@ -162,6 +165,9 @@ nav {
     color: white;
 }
 
+#promo-section img{
+   position: absolute;
+}
 #img-mobile-promo {
     
     position: absolute;
@@ -174,6 +180,12 @@ nav {
     
 }
 
+#img-pc-promo {
+    
+    display: none
+    
+}
+
 .promo-img{
     margin-top: 10%;
 }
@@ -183,12 +195,14 @@ nav {
 .info-promo{
     padding-top: 50px;
     position: absolute;
+    margin-left: 5%;
 }
 
 .info-promo h2{
     font-style: italic;
-    font-size: 2.3em;
+    font-size: 2.1em;
     font-weight: bold;
+    
 }
 
 .info-promo h3{
@@ -197,10 +211,25 @@ nav {
     font-style: italic;
 }
 
+.btn-promo{
+    position: absolute;
+    background-color: #FCF0C8;
+    color: black;
+    border-radius: 40px;
+    width: 250px;
+    font-size: 0.8em;
+    margin-left: 20%;
+    margin-top: 470px;
+}
+
+
 #benefits-section img{
     height: 573px;
 }
 
+#benefits-section-pc{
+    display: none;
+}
 .container-img{
     display: flex;
 }
@@ -286,6 +315,10 @@ nav {
     margin-top: 20%;
 }
 
+.review1-section-pc{
+    display: none;
+}
+
 .review2-section{
     margin-top: 63.5%;
 }
@@ -332,7 +365,17 @@ nav {
     font-style: italic;
 }
 
+.review1-section-pc{
+    display: none; 
+}
 
+.review2-section-pc{
+    display: none; 
+}
+
+.review3-section-pc{
+    display: none; 
+}
 
 .review-3 h3{
     font-size: 1.6em;
@@ -345,6 +388,10 @@ nav {
     margin-top: 41px;
     margin-left: 23%;
     
+}
+
+#contact-section-pc{
+    display: none;
 }
 
 #contact-section {
@@ -424,15 +471,21 @@ nav {
     
 }
 
+
 footer {
-    background: #f8f8f8;
-    text-align: center;
-    padding: 10px;
     margin-top: 70%;
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre el texto y los iconos */
+    align-items: center; /* Alinea verticalmente al centro */
+    background: #f8f8f8;
+    color: #3BB5FA;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px; /* Añadir un poco de espacio alrededor del contenido */
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 .nav-links-mobile{
     display: none;
 }
@@ -451,5 +504,294 @@ footer {
     color: black;
     font-weight: bold;
 }
+
+/* Main Content */
+
+#img-mobile {
+    display: none;
+}
+
+#img-pc{
+    display: initial;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 60%;
+}
+
+.info{
+    margin-left: 60%;
+    margin-top: -10%;
+    font-size: 1.2em;
+}
+
+.btn-date{
+    
+    position: absolute;
+    background-color: #FCF0C8;
+    color: black;
+    border-radius: 40px;
+    width: 20%;
+    font-size: 0.8em;
+    margin-left: 71%;
+    margin-top: 440px;
+    
+}
+
+#about-us h2{
+    font-size: 2.8em;
+}
+
+#about-us p{
+    padding-top: 3%;
+    margin-left: 3%;
+    text-align: center;
+    font-size: 1em;
+    width: 95%;
+}
+
+.container{
+    margin-top: 10%;
+    display: flex;
+}
+
+.container-2{
+    margin-top: -0.3%;
+    display: flex;
+}
+.item{
+    width: 50%;
+    font-size: 1.1em;
+}
+
+.item p{
+    
+    width: 100%;
+    text-align: left;
+    margin-top: 20%;
+}
+
+.item img{
+    width: 100%;
+}
+
+#img-pc-promo {
+    display: initial;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 50%;
+    
+}
+
+#img-mobile-promo {
+    
+    display: none;
+    
+}
+
+#promo-section {
+    margin-top: -1%;
+    position: relative;
+    height: 300px;
+    height: 573px;
+    background: linear-gradient(to bottom, white, #63BFF2);
+    text-align: center;
+    color: white;
+}
+
+.promo-alert{
+    margin-left: -45%;
+    margin-top: 15%;
+    width: 30%;
+
+}
+
+
+.promo-img{
+    margin-top: 25%;
+    margin-left: -40%;
+}
+
+
+
+.info-promo{
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    display: block;
+}
+.info-promo h2{
+    font-size: 3em;
+    margin-left: 60%;
+    margin-top: 10%;
+}
+
+.info-promo h3{
+    font-size: 1.3em;
+    margin-left: 60%;
+}
+
+.btn-promo{
+    position: absolute;
+    background-color: #FCF0C8;
+    color: black;
+    border-radius: 40px;
+    width: 250px;
+    font-size: 0.8em;
+    margin-left: 71%;
+    margin-top: 450px;
+}
+
+#benefits-section{
+    display: none;
+}
+
+#benefits-section-pc{
+    display: flex;
+    background: linear-gradient(to left, #3BB5FA, #64EDF0 );
+    height: 100%;
+    
+}
+
+.left-container{
+    width: 50%;
+    height: 100%;
+
+}
+
+.left-container img{
+    width: 100%;
+    height: 100%;
+}
+
+.right-container{
+    width: 50%;
+    color: white;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.right-container h2{
+    text-align: center;
+}
+
+.right-container h3{
+    text-align: center;
+    
+}
+
+.right-container ul{
+    margin-left: 20%;
+}
+.right-container li{
+    padding-left: 2%;
+}
+
+
+.review1-section{
+    display: none;
+}
+
+.review1-section-pc{
+    display: flex;
+    background: linear-gradient(to left, #3BB5FA, #64EDF0 );
+    margin-top: -3px;
+}
+
+.review2-section-pc{
+    display: flex;
+    background: linear-gradient(to left, #3BB5FA, #64EDF0 );
+    margin-top: -3px;
+}
+
+.review3-section-pc{
+    display: flex;
+    background: linear-gradient(to left, #3BB5FA, #64EDF0 );
+    margin-top: -3px;
+}
+
+.review2-section{
+    display: none;
+}
+
+.review3-section{
+    display: none;
+}
+
+#contact-section-pc{
+    display: flex;
+}
+
+#contact-section{
+    display: none;
+}
+
+.right-container-form{
+    width: 50%;
+    font-size: 1.5em;
+    font-style: italic;
+    
+}
+
+.right-container-form h3{
+    margin-bottom: 60px;
+}
+.right-container-form input{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+}
+
+
+.right-container-form textarea{
+    max-width: 80%;
+    min-width: 80%;
+    height: 400px !important;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+}
+
+.right-container-form::placeholder{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+footer {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre el texto y los iconos */
+    align-items: center; /* Alinea verticalmente al centro */
+    background: #f8f8f8;
+    color: #3BB5FA;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px; /* Añadir un poco de espacio alrededor del contenido */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Espaciado entre los iconos */
+}
+
+.social-icons i {
+    cursor: pointer; /* Añadir un puntero al pasar sobre los iconos */
+}
+
 
 }
